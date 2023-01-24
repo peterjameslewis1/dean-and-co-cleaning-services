@@ -1,53 +1,44 @@
-export default function IndexPage({ pets }) {
+// pages/index.js
+import { createClient } from "next-sanity";
+import Hero from "../components/Hero";
+import Cards from "../components/cards/Cards";
+import Contact from "../components/Contact";
+
+const client = createClient({
+  projectId: 'o8oetywj',
+  dataset: 'production',
+  apiVersion: '2023-01-21',
+  useCdn: false
+})
+
+export default function IndexPage({ homePage, cards }) {
   return (
     <>
-      <header>
-        <h1>Sanity + Next.js</h1>
-      </header>
-      <main>
-        <h2>Pets</h2>
-        {pets.length > 0 && (
-          <ul>
-            {pets.map((pet) => (
-              <li key={pet._id}>{pet?.name}</li>
-            ))}
-          </ul>
-        )}
-        {!pets.length > 0 && <p>No pets to show</p>}
-        {pets.length > 0 && (
-          <div>
-            <pre>{JSON.stringify(pets, null, 2)}</pre>
-          </div>
-        )}
-        {!pets.length > 0 && (
-          <div>
-            <div>¯\_(ツ)_/¯</div>
-            <p>
-              Your data will show up here when you've configured everything
-              correctly
-            </p>
-          </div>
-        )}
-      </main>
+      <Hero
+        title={homePage[0].title}
+        subtitle={homePage[0].subtitle}
+        client={client}
+        imageUrl={homePage[0].image.asset._ref}
+      />
+      <Cards cards={cards} client={client} />
+      <Contact />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const pets = [
-    /* {
-      _createdAt: "2022-03-08T09:28:00Z",
-      _id: "1f69c53d-418a-452f-849a-e92466bb9c75",
-      _rev: "xnBg0xhUDzo561jnWODd5e",
-      _type: "pet",
-      _updatedAt: "2022-03-08T09:28:00Z",
-      name: "Bamse"
-    } */
-  ];
+  const pets = await client.fetch(`*[_type == "pet"]`);
+  const posts = await client.fetch(`*[_type == "posts"]`);
+  const homePage = await client.fetch(`*[_type == "home"]`);
+  const cards = await client.fetch(`*[_type == "cards"]`);
+  console.log('homePage', homePage)
+  console.log('cards', cards)
+
 
   return {
     props: {
-      pets
+      homePage,
+      cards
     }
   };
 }

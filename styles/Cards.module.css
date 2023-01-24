@@ -1,0 +1,41 @@
+.wrapper {
+    padding: 50px 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+}
+
+.card {
+    height: 400px;
+    flex: 1;
+    box-shadow: #efe9e9 0px 0px 20px 3px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.cardImage {
+    height: 70%;
+    overflow: hidden;
+}
+
+.cardText {
+    height: 30%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cardText h3 {
+    font-weight: 400;
+}
+
+.cardText p {
+    font-size: 16px;
+    font-weight: 100;
+}
