@@ -33,6 +33,7 @@ export async function getStaticProps() {
   const cards = await client.fetch(`*[_type == "cards"]`);
   console.log('homePage', homePage)
   console.log('cards', cards)
+  console.log('posts', posts)
 
 
   return {
