@@ -8,8 +8,9 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@next/swc-darwin-x64": "^13.1.4",
+    "@netlify/plugin-nextjs": "^4.30.2",
     "@sanity/image-url": "^1.0.2",
+    "netlify-cli": "^12.9.2",
     "next": "^13",
     "next-sanity": "^4.1.1",
     "react": "^18",
