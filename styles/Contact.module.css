@@ -1,6 +1,6 @@
 .contactContainer {
     padding: 50px 100px;
-    background-color: rgb(245, 234, 234);
+    background-color: lightgrey;
 }
 .contactContainer ul {
     list-style: none;

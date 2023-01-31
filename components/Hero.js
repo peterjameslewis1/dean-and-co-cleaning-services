@@ -13,7 +13,7 @@ export default function Hero({ title, subtitle, imageUrl, client }) {
                 <img src={src} className={styles.img} />
             </div>
             <div className={styles.textContainer} >
-                <h1 className={styles.title}>You deserve a clean home.</h1>
+                <h1 className={styles.title}>Title</h1>
                 <p className={styles.subtitle}>Subtitle</p>
             </div>
         </section>

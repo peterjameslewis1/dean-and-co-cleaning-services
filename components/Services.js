@@ -15,14 +15,6 @@ export default function Services() {
                     <h3>Service 3</h3>
                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                 </li>
-                <li>
-                    <h3>Service 4</h3>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                </li>
-                <li>
-                    <h3>Service 5</h3>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                </li>
             </ul>
         </div>
     )
