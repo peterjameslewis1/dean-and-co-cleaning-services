@@ -14,7 +14,7 @@ const client = createClient({
   useCdn: false
 })
 
-export default function IndexPage() {
+export default function IndexPage({ homePage }) {
   return (
     <>
       <Hero
