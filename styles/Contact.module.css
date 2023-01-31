@@ -1,0 +1,15 @@
+.contactContainer {
+    padding: 50px 100px;
+    background-color: rgb(245, 234, 234);
+}
+.contactContainer ul {
+    list-style: none;
+}
+.contactContainer ul li {
+    display: flex;
+    padding: 10px 0px;
+}
+.contactContainer ul a {
+    color: black;
+    margin-left: 10px;
+}

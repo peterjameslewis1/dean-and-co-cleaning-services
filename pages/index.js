@@ -1,8 +1,11 @@
 // pages/index.js
 import { createClient } from "next-sanity";
 import Hero from "../components/Hero";
-import Cards from "../components/cards/Cards";
+import Services from '../components/Services'
 import Contact from "../components/Contact";
+
+// import Font Awesome CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const client = createClient({
   projectId: 'o8oetywj',
@@ -20,7 +23,8 @@ export default function IndexPage({ homePage, cards }) {
         client={client}
         imageUrl={homePage[0].image.asset._ref}
       />
-      <Cards cards={cards} client={client} />
+      <Services />
+      {/* <Cards cards={cards} client={client} /> */}
       <Contact />
     </>
   );
@@ -31,10 +35,6 @@ export async function getStaticProps() {
   const posts = await client.fetch(`*[_type == "posts"]`);
   const homePage = await client.fetch(`*[_type == "home"]`);
   const cards = await client.fetch(`*[_type == "cards"]`);
-  console.log('homePage', homePage)
-  console.log('cards', cards)
-  console.log('posts', posts)
-
 
   return {
     props: {

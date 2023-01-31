@@ -1,21 +1,18 @@
 import Link from 'next/link'
-import navStyles from '../styles/Nav.module.css'
+import styles from '../styles/Nav.module.css'
 
 const Nav = ({ client, homePage }) => {
     return (
-        <nav className={navStyles.nav}>
-            <ul>
-                <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/about">About</Link>
-                </li>
-                <li>
-                    <Link href="/contact">Contact</Link>
-                </li>
-            </ul>
-        </nav>
+        <header className={styles.header}>
+            <h1>Business Name</h1>
+            <nav className={styles.nav}>
+                <ul>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 
