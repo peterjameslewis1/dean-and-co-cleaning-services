@@ -2,6 +2,11 @@
     background-color: white;
     padding: 50px 100px;
 }
+@media (max-width: 768px) {
+    .servicesContainer {
+        padding: 50px 20px;
+    }
+  }
 
 .servicesContainer ul {
     list-style: none;

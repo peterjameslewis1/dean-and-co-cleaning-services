@@ -35,6 +35,11 @@
     width: 100%;
     overflow: hidden;
 }
+@media (max-width: 768px) {
+    .heroImage {
+        height: 300px;
+    }
+}
 
 .img {
     width: 100%;

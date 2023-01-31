@@ -2,6 +2,11 @@
     padding: 50px 100px;
     background-color: lightgrey;
 }
+@media (max-width: 768px) {
+    .contactContainer {
+        padding: 50px 20px;
+    }
+  }
 .contactContainer ul {
     list-style: none;
 }
