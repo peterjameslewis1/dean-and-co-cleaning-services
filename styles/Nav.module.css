@@ -34,3 +34,9 @@
 .nav ul li a:hover {
     border-bottom: 1px solid black
 }
+
+@media (max-width: 481px) {
+    .header h1 {
+        font-size: 30px;
+    }
+}
