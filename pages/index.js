@@ -14,7 +14,7 @@ const client = createClient({
   useCdn: false
 })
 
-export default function IndexPage({ homePage, cards }) {
+export default function IndexPage() {
   return (
     <>
       <Hero
@@ -24,7 +24,6 @@ export default function IndexPage({ homePage, cards }) {
         imageUrl={homePage[0].image.asset._ref}
       />
       <Services />
-      {/* <Cards cards={cards} client={client} /> */}
       <Contact />
     </>
   );
