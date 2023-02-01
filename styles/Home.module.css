@@ -11,15 +11,19 @@
 .textContainer {
     position: absolute;
     z-index: 99;
+    background-color: var(--secondary);
+left: 0;
+    padding: 30px;
+    width: 40%;
 }
 
 .title {
     font-size: 50px;
-    color: white;
+    color: var(--primary);
 }
 .subtitle {
-    color: white;
-    text-align: center;
+    color: var(--primary);
+    text-align: left;
 }
 
 .heroImage {

@@ -1,3 +1,9 @@
+:root{
+  --primary:#282634;
+  --secondary:#FFFFFF;
+  --ternary: #DCDCDC
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

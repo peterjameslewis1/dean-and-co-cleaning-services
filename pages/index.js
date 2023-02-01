@@ -1,8 +1,8 @@
 // pages/index.js
 import { createClient } from "next-sanity";
-import Hero from "../components/Hero";
-import Services from '../components/Services'
-import Contact from "../components/Contact";
+import Hero from "../components/heroImage";
+import Services from '../components/services'
+import Contact from "../components/contact";
 
 // import Font Awesome CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
