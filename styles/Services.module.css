@@ -1,6 +1,8 @@
 .servicesContainer {
-    background-color: white;
-    padding: 50px 100px;
+    background-color: var(--secondary);
+    padding: 50px 0px;
+    max-width: 50%;
+    margin: 0 auto;
 }
 @media (max-width: 768px) {
     .servicesContainer {
@@ -8,24 +10,14 @@
     }
   }
 
-.servicesContainer ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  .servicesContainer h2 {
+    text-align: center;
+  }
+  .servicesText h4 {
+    text-align: center;
+  }
 
-.servicesContainer ul li {
-    padding: 10px;
-    text-align: left;
-}
-.servicesContainer ul li p {
-    margin: 10px 0px;
-    font-size: 16px;
-}
-
-@media (max-width: 768px) {
-    .servicesContainer ul {
-        flex-wrap: wrap;
-    }
-}
+  .servicesText p {
+    margin: 40px 0;
+    text-align: justify;
+  }
