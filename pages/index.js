@@ -4,6 +4,7 @@ import Hero from "../components/heroImage";
 import Services from '../components/services'
 import Contact from "../components/contact";
 import IconCards from '../components/iconCards'
+import About from '../components/about'
 
 // import Font Awesome CSS
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -23,6 +24,7 @@ export default function IndexPage() {
       <Hero />
       <Services />
       <IconCards />
+      <About />
       <Contact />
     </>
   );
