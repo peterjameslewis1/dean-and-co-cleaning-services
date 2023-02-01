@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+    background-color: var(--primary);
+    text-align: center;
+}
+.card h3 {
+    margin-top: 20px;
+    color: var(--secondary);
+    font-weight: 500;
+}
+.imageContainer {
+    position: relative;
+    border: 1px solid var(--primary);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--ternary);
+}
+.imageContainer img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+}

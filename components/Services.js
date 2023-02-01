@@ -2,20 +2,27 @@ import styles from '../styles/services.module.css'
 export default function Services() {
     return (
         <div className={styles.servicesContainer}>
-            <ul>
-                <li>
-                    <h3>Service 1</h3>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                </li>
-                <li>
-                    <h3>Service 3</h3>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                </li>
-                <li>
-                    <h3>Service 3</h3>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                </li>
-            </ul>
+            <h2>Our Services</h2>
+            <div className={styles.servicesText}>
+                <p>We serve both residential and commercial clients,
+                    bringing cleanliness to every space.
+                    Our specialty is Pre & Post tenancy cleans, ensuring
+                    every inch is cleaned & presentable for your next tenant!
+                    We can also clean your communal areas in your
+                    business, keeping your hallways, restrooms, canteens &
+                    reception areas in order.</p>
+
+                <h4>Need a hand at home?</h4>
+
+                <p>
+                    Our friendly staff can help you clean your environment,
+                    prepare your space for visitors, clean up after
+                    celebrations, whatever the situation you can rely on
+                    Dean & Co. Cleaners
+                    We promise that our cleaners are reliable and
+                    hardworking, for a mutual experience of respect and
+                    satisfaction.</p>
+            </div>
         </div>
     )
 }
