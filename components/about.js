@@ -1,10 +1,11 @@
 
+import styles from '../styles/about.module.css'
 export default function About() {
     return (
-        <div>
+        <div className={styles.container}>
             <h2>About Us</h2>
+            <h3>Our love for cleaning comes shining through!</h3>
             <p>
-                Our love for cleaning comes shining through!
                 We love to clean. We know that not everyone does, but
                 we're pretty sure that everyone loves a clean space.
                 That why we've made it our full time job to help people
@@ -14,6 +15,7 @@ export default function About() {
                 space that we clean as though it was our own - with
                 respect and integrity.
             </p>
+            <a href="" >Learn More</a>
         </div>
     )
 }

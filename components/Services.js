@@ -12,7 +12,7 @@ export default function Services() {
                     business, keeping your hallways, restrooms, canteens &
                     reception areas in order.</p>
 
-                <h4>Need a hand at home?</h4>
+                <h3>Need a hand at home?</h3>
 
                 <p>
                     Our friendly staff can help you clean your environment,

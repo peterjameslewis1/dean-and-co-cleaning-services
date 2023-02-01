@@ -11,13 +11,13 @@
   }
 
   .servicesContainer h2 {
-    text-align: center;
-  }
-  .servicesText h4 {
-    text-align: center;
+    font-size: 50px;
+    color: var(--primary);
   }
 
   .servicesText p {
     margin: 40px 0;
     text-align: justify;
+    line-height: 30px;
+    color: var(--primary);
   }

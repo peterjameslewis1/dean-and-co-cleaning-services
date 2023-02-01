@@ -1,0 +1,29 @@
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.container h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.container h3 {
+    margin-bottom: 15px;
+}
+.container p {
+    line-height: 30px;
+    margin-bottom: 80px;
+}
+.container a {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 20px 30px;
+    transition: all 0.5s;
+}
+.container a:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+    color: var(--primary);
+}
