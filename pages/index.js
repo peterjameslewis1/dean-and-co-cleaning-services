@@ -1,11 +1,11 @@
 // pages/index.js
 // import { createClient } from "next-sanity";
-import Hero from "../components/heroImage";
-import Services from '../components/services'
-import Contact from "../components/contact";
-import IconCards from '../components/iconCards'
-import About from '../components/about'
-import Reviews from '../components/reviews'
+import Hero from '../src/heroImage'
+import Services from '../src/services'
+import Contact from "../src/contact"
+import Icons from '../src/icon'
+import About from '../src/about'
+import Reviews from '../src/reviews'
 
 // import Font Awesome CSS
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -24,7 +24,7 @@ export default function IndexPage() {
     <>
       <Hero />
       <Services />
-      <IconCards />
+      <Icons />
       <About />
       <Reviews />
       <Contact />

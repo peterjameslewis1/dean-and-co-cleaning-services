@@ -4,7 +4,7 @@ import mop from '../public/img/mop.png'
 import bucket from '../public/img/cleaning-bucket.png'
 import styles from '../styles/icon-cards.module.css'
 
-export default function IconCards() {
+export default function Icons() {
     return (
         <div className={styles.container}>
             <div className={styles.card}>

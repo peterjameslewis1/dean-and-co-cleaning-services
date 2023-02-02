@@ -10,7 +10,7 @@ export default function Reviews() {
             </div>
             <div className={styles.review}>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus lorem nec orci blandit, vel.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus lorem nec orci blandit, vel.                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus lorem nec orci blandit, vel.
                 </p>
             </div>
             <div className={styles.review}>

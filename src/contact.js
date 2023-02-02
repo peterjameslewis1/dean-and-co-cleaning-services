@@ -5,6 +5,7 @@ import {
     faPhone,
     faAt,
 } from "@fortawesome/free-solid-svg-icons";
+import Form from './form'
 
 export default function Contact() {
     return (
