@@ -5,6 +5,7 @@ import Services from '../components/services'
 import Contact from "../components/contact";
 import IconCards from '../components/iconCards'
 import About from '../components/about'
+import Reviews from '../components/reviews'
 
 // import Font Awesome CSS
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -25,6 +26,7 @@ export default function IndexPage() {
       <Services />
       <IconCards />
       <About />
+      <Reviews />
       <Contact />
     </>
   );
