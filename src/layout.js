@@ -1,4 +1,4 @@
-import styles from '../styles/layout.module.css'
+import styles from '../styles/Layout.module.css'
 import Header from './header'
 
 const Layout = ({ children }) => {

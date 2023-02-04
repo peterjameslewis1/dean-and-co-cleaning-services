@@ -1,4 +1,4 @@
-import styles from '../styles/home.module.css'
+import styles from '../styles/Home.module.css'
 import img from '../public/img/hero-image.jpg'
 
 export default function HeroImage() {
