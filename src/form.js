@@ -8,6 +8,7 @@ export default function Form() {
             action="contact/?success=true"
             data-netlify="true"
             className={styles.form}
+            netlify
         >
             <label htmlFor="name">Full Name *</label>
             <input
