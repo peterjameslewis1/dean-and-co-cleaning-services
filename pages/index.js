@@ -6,6 +6,7 @@ import Contact from "../src/contact"
 import Icons from '../src/icon'
 import About from '../src/about'
 import Reviews from '../src/reviews'
+import Booking from '../src/booking'
 
 // import Font Awesome CSS
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -27,6 +28,7 @@ export default function IndexPage() {
       <Icons />
       <About />
       <Reviews />
+      <Booking />
       <Contact />
     </>
   );

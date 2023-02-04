@@ -9,7 +9,7 @@ export default function HeroImage() {
             </div>
             <div className={styles.textContainer} >
                 <h1 className={styles.title}>Let us do the cleaning.</h1>
-                <p className={styles.subtitle}>You deserve a clean environment and thats out specialty</p>
+                <p className={styles.subtitle}>You deserve a clean environment and thats out specialty.</p>
             </div>
         </section>
     )

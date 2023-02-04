@@ -5,11 +5,12 @@
     padding: 0 50px;
     box-shadow: 0px 0px 5px 0px lightgrey;
     background-color: var(--primary);
-    height: 100px;
+    height: 110px;
 }
 .header h1 {
     color: var(--secondary);
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 40px;
 }
 .headerContainer {
     display: flex;
@@ -20,7 +21,8 @@
 }
 .header p {
     color: var(--secondary);
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 300;
 }   
 .logo {
     height: 70%;

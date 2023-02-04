@@ -1,6 +1,7 @@
 .contactContainer {
     padding: 50px 100px;
-    background-color: lightgrey;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 @media (max-width: 768px) {
     .contactContainer {
@@ -15,6 +16,5 @@
     padding: 10px 0px;
 }
 .contactContainer ul a {
-    color: black;
     margin-left: 10px;
 }
