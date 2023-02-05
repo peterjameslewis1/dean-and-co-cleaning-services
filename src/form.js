@@ -5,11 +5,12 @@ export default function Form() {
         <form
             name="contact-form"
             method="POST"
-            action="contact/?success=true"
+            action="/success=true"
             data-netlify="true"
             className={styles.form}
             netlify
         >
+            <input type="hidden" name="form-name" value="contact-form" />
             <label htmlFor="name">Full Name *</label>
             <input
                 id="name"
