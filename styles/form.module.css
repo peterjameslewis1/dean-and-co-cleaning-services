@@ -1,35 +1,39 @@
-.form {
-    background-color: var(--ternary);
+.container {
     padding: 20px;
     margin: 0 auto;
     box-shadow: 0px 15px 20px 0px var(--ternary);
     color: var(--primary);
 }
-.form label {
-    font-size: 22px;
+.container label {
+    font-size: 16px;
     font-weight: 400;
 }
-.form input, .form textarea {
+.container input, .container textarea {
     width: 100%;
     margin: 10px auto;
     padding: 10px;
-    border: none;
+    border: 1px solid var(--ternary);
+    border-radius: 5px;
     outline: none;
 }
-.form textarea {
+.container textarea {
     height: 150px;
 }
 .submit {
-    background-color: var(--secondary);
-    padding: 20px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    color: var(--secondary);
+    width: 100%;
+    padding: 10px;
     border: none;
     margin-top: 40px;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 .submit:hover {
-    background-color: 0 5px 0px 10px var(--primary);
-    border: var(--secondary);
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }

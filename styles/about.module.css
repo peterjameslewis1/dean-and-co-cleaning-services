@@ -15,15 +15,3 @@
     line-height: 30px;
     margin-bottom: 80px;
 }
-.container a {
-    border: 1px solid var(--primary);
-    background-color: var(--primary);
-    color: var(--secondary);
-    padding: 20px 30px;
-    transition: all 0.5s;
-}
-.container a:hover {
-    background-color: var(--secondary);
-    cursor: pointer;
-    color: var(--primary);
-}

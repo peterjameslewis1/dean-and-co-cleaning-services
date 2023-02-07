@@ -1,4 +1,4 @@
-import styles from '../styles/Services.module.css'
+import styles from '../styles/services.module.css'
 export default function Services() {
     return (
         <div className={styles.servicesContainer}>
@@ -23,6 +23,7 @@ export default function Services() {
                     hardworking, for a mutual experience of respect and
                     satisfaction.</p>
             </div>
+            <a href="#booking" className={styles.btn}>Book Now</a>
         </div>
     )
 }

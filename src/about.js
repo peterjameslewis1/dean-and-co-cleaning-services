@@ -15,7 +15,6 @@ export default function About() {
                 space that we clean as though it was our own - with
                 respect and integrity.
             </p>
-            <a href="" >Learn More</a>
         </div>
     )
 }

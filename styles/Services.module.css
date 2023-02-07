@@ -8,16 +8,30 @@
     .servicesContainer {
         padding: 50px 20px;
     }
-  }
+}
 
-  .servicesContainer h2 {
+.servicesContainer h2 {
     font-size: 50px;
-    color: var(--primary);
-  }
+  color: var(--primary);
+}
 
-  .servicesText p {
+.servicesText p {
     margin: 40px 0;
     text-align: justify;
     line-height: 30px;
     color: var(--primary);
-  }
+}
+.btn {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 20px 30px;
+  transition: all 0.5s;
+  display: inline-block;
+  margin-top: 40px;
+}
+.btn:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+  color: var(--primary);
+}

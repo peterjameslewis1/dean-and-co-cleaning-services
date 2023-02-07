@@ -1,9 +1,21 @@
+import { useState } from 'react'
 import styles from '../styles/form.module.css'
+import { useRouter } from 'next/router';
 
-export default function Form() {
-    return (
+export default function Form({ confirmationMessage }) {
+    const [userName, setUserName] = useState('')
+    const router = useRouter();
+    const confirmationScreenVisible =
+        router.query?.success && router.query.success === "true";
+    const formVisible = !confirmationScreenVisible;
+
+    const ConfirmationMessage = (
+        <p>{confirmationMessage}</p>
+    )
+
+    const ContactForm = (
         <form
-            className="container"
+            className={styles.container}
             method="POST"
             name="contact-form"
             action="/?success=true"
@@ -13,6 +25,7 @@ export default function Form() {
             <input
                 type="hidden"
                 name="subject"
+                value={`You have an email from ${userName}`}
             />
             <input type="hidden" name="form-name" value="contact-form" />
             <p hidden>
@@ -27,14 +40,25 @@ export default function Form() {
                 name="name"
                 required
                 type="text"
+                onChange={(e) => setUserName(e.target.value)}
             />
-            <label htmlFor="company">Company *</label>
-            <input id="company" name="company" required type="text" />
+            <label htmlFor="company">Company</label>
+            <input id="company" name="company" type="text" />
             <label htmlFor="email">E-mail Address *</label>
             <input id="email" type="email" name="email" required />
             <label htmlFor="message">Message *</label>
             <textarea id="message" name="message" required />
-            <button type="submit">Submit</button>
+            <button type="submit" className={styles.submit}>Submit</button>
         </form>
+    )
+    return (
+        <>
+            {formVisible
+                ?
+                ContactForm
+                :
+                ConfirmationMessage
+            }
+        </>
     )
 }

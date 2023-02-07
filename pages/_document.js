@@ -5,7 +5,6 @@ export default function Document() {
         <Html lang="en">
             <Head >
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
-                <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
             </Head>
 
