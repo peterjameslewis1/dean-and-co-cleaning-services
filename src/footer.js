@@ -1,16 +1,17 @@
 import styles from '../styles/footer.module.css'
 import logo from '../public/img/brand-logo.png'
+import ecoFriendlyBadge from '../public/img/eco-friendly.png'
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <img src={logo.src} alt="company logo" />
             <div className={styles.content}>
                 <div className={styles.location}>
                     <h3>Where to find us</h3>
                     <p>Sanderson House, Station Road, Horsforth, LS18 5NT.</p>
                 </div>
                 <div className={styles.contact}>
+                    <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
                     <h3>Contact</h3>
                     <ul>
                         <li>

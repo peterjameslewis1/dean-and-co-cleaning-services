@@ -1,8 +1,13 @@
 import styles from '../styles/Services.module.css'
+import ecoFriendlyBadge from '../public/img/eco-friendly.png'
 export default function Services() {
     return (
         <div className={styles.servicesContainer}>
             <h2>Our Services</h2>
+            <div className={styles.ecoFriendlyBadgeContainer}>
+                <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
+                <p>We only use Eco-friendly products, no toxic chemicals!</p>
+            </div>
             <div className={styles.servicesText}>
                 <p>We serve both residential and commercial clients,
                     bringing cleanliness to every space.

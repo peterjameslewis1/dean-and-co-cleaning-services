@@ -10,4 +10,40 @@
 }
 .bookingContent h2 {
     font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1280px) {
+    .bookingContent {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bookingContent {
+        max-width: 90%;
+    }
+    .bookingText h2 {
+        font-size: 40px;
+    }
+    .bookingText p {
+        font-size: 16px;
+    }
+    .bookingContent {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .bookingText h2 {
+        font-size: 30px;
+    }
+    .bookingText p {
+        font-size: 15px;
+    }
 }

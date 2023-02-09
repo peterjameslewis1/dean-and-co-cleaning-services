@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -15,7 +15,8 @@
 .reviews {
     display: flex;
     gap: 20px;
-    max-width: 70%;
+    max-width: 90%;
+    flex-wrap: wrap;
 }
 .review {
     background-color: var(--secondary);
@@ -23,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 33%;
+    flex: 30%;
 }
 .title {
     font-size: 50px;
@@ -32,4 +33,35 @@
     padding: 30px;
     background: var(--primary);
     color: var(--secondary);
+}
+
+
+/* MEDIA QUERIES < 1920px */
+
+@media (max-width: 1280px) {
+    .reviewsContainer {
+        height: 80vh;
+        padding: 0;
+    }
+    .review {
+        flex: 33%;
+    }
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px)  {
+    .review {
+        flex: 100%;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .review p {
+        font-size: 16px;
+    }
 }
