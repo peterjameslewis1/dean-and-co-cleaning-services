@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 600px;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -40,8 +40,8 @@
 
 @media (max-width: 1280px) {
     .reviewsContainer {
-        height: 80vh;
-        padding: 0;
+        height: 100%;
+        padding: 100px 0;
     }
     .review {
         flex: 33%;
@@ -56,12 +56,18 @@
         flex: 100%;
     }
     .title {
-        font-size: 30px;
+        font-size: 35px;
     }
 }
 
 @media (max-width: 480px) {
     .review p {
         font-size: 16px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .review {
+        padding: 20px;
     }
 }

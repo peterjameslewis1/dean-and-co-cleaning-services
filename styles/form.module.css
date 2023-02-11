@@ -37,3 +37,8 @@
     border: 1px solid var(--primary);
     color: var(--primary);
 }
+.successMessage {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}

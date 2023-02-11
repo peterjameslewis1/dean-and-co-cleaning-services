@@ -41,9 +41,9 @@
 
 @media (max-width: 480px) {
     .bookingText h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
     .bookingText p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }

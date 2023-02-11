@@ -8,9 +8,9 @@ export default function Form({ confirmationMessage }) {
     const confirmationScreenVisible =
         router.query?.success && router.query.success === "true";
     const formVisible = !confirmationScreenVisible;
-
+    console.log('formVisible', formVisible)
     const ConfirmationMessage = (
-        <p>{confirmationMessage}</p>
+        <p className={styles.successMessage}>{confirmationMessage}</p>
     )
 
     const ContactForm = (
@@ -53,12 +53,8 @@ export default function Form({ confirmationMessage }) {
     )
     return (
         <>
-            {formVisible
-                ?
-                ContactForm
-                :
-                ConfirmationMessage
-            }
+            {ContactForm}
+            {confirmationScreenVisible && ConfirmationMessage}
         </>
     )
 }

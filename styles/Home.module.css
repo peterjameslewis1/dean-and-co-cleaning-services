@@ -130,23 +130,24 @@
 
 @media (max-width: 480px) {
     .heroContainer {
-        height: 250px;
         position: relative;
     }
     .textContainer {
         width: 70%;
     }
     .textContainer h1 {
-        font-size: 18px;
+        font-size: 22px;
+        margin: 0;
     }
     .textContainer p {
         font-size: 12px;
     }
     .btn {
-        font-size: 14px;
+        font-size: 13px;
     width: 150px;
     background-color: var(--primary);
     color: var(--secondary);
     margin-top: 10px;
+    padding: 12px;
     }
 }

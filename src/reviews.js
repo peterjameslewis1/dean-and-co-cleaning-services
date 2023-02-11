@@ -1,5 +1,4 @@
 import styles from '../styles/reviews.module.css'
-import Form from '../src/form'
 
 export default function Reviews() {
     return (
