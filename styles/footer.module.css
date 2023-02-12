@@ -41,6 +41,11 @@
 .contact ul li {
     padding: 10px 0;
 }
+.companyNumber {
+    font-size: 12px;
+    filter: brightness(0.6);
+    margin-top: 20px;
+}
 
 @media (max-width: 992px) {
     .ecoFriendlyBadge {
@@ -72,6 +77,9 @@
     }
     .content p, .content li {
         font-size: 15px;
+    }
+    .content .companyNumber {
+        font-size: 11px;
     }
 }
 

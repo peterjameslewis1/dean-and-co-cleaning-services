@@ -28,6 +28,7 @@ export default function Footer() {
                             <a href="tel:+07493774780"> 07493 774780</a>
                         </li>
                     </ul>
+                    <p className={styles.companyNumber}>Company No. 14648906</p>
                 </div>
             </div>
         </footer>
