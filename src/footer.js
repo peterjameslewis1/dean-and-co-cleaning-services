@@ -24,9 +24,6 @@ export default function Footer() {
                             Harvie:
                             <a href="tel:+07549309118"> 07549 309118</a>
                         </li>
-                        <li>Alix:
-                            <a href="tel:+07493774780"> 07493 774780</a>
-                        </li>
                     </ul>
                     <p className={styles.companyNumber}>Company No. 14648906</p>
                 </div>

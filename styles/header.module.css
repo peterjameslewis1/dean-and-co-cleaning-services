@@ -2,10 +2,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
     box-shadow: 0px 0px 5px 0px lightgrey;
     background-color: var(--primary);
     height: 130px;
+}
+.header .contact {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary);
+    justify-content: space-evenly;
+}
+.header .contact a {
+    margin: 5px 0;
+}
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+.headerContent .headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .header h1 {
     color: var(--secondary);
@@ -18,59 +38,93 @@
     justify-content: flex-start;
     width: 100%;
     height: 100%;
+    padding: 0 50px;
 }
 .logo {
     height: 100%;
-    width: 100%;
+    width: 100px;
     padding: 15px;
     background: var(--ternary);
     border-radius: 50%;
+    display: block;
 }
 .headerLogo { 
-    width: 100px;
+    width: auto;
     margin-right: 20px;
+    width: auto;
 }
 .header p {
     color: var(--secondary);
     font-size: 16px;
     font-weight: 300;
-} 
+}
+.icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: white;
+}
 
 
 /* MEDIA QUERIES < 1920px */
 
-@media (max-width: 1280px) {
-    .header {
-        padding: 0px 20px;
+@media (max-width: 1366px) {
+    .contact a span {
+        display: none;
     }
+}
+
+@media (max-width: 1280px) {
     .header h1 {
         font-size: 30px;
     }
 }
 
+@media (max-width: 992px) {
+    .headerContainer {
+        padding: 0 20px;
+    }
+    .logo {
+        width: 90px;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
-        padding: 0;
         height: 100px;
-    }
-    .headerContainer {
-        max-width: 90%;
-        margin: 0 auto;
     }
     .headerContainer h1 {
         font-size: 22px;
     }
     .logo {
         width: 70px;
-        margin-right: 20px;
+    }
+    .headerLogo {
+        margin-right: 15px;
+    }
+    .headerText h1 {
+        font-size: 20px;
+    }
+    .headerText p {
+        font-size: 15px;
     }
 }
 
 @media (max-width: 481px) {
     .header h1 {
-        font-size: 20px;
+        font-size: 17px;
     }
-    .headerLogo {
-        margin-right: 0;
+    .header p {
+        font-size: 12px;
+    }
+    .logo {
+        width: 60px;
+    }
+    .headerContent {
+        gap: 20px;
+    }
+    .icons {
+        width: 15px;
+        height: 15px;
     }
 }

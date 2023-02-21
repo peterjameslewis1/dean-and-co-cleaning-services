@@ -19,12 +19,13 @@
     flex-wrap: wrap;
 }
 .review {
-    background-color: var(--secondary);
+    background-color: #ffffff9c;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 30%;
+    backdrop-filter: blur(2px);
 }
 .title {
     font-size: 50px;
@@ -45,6 +46,8 @@
     }
     .review {
         flex: 33%;
+        font-size: 18px;
+        line-height: 22px;
     }
     .title {
         font-size: 40px;

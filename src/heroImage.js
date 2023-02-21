@@ -4,15 +4,16 @@ import ecoFriendlyBadge from '../public/img/eco-friendly.png'
 
 export default function HeroImage() {
     return (
-        <section className={styles.heroContainer}>
+        <div className={styles.heroContainer}>
             <div className={styles.heroImage}>
                 <img src={img.src} className={styles.img} />
             </div>
             <div className={styles.textContainer} >
-                <h1 className={styles.title}>Let us do the cleaning.</h1>
-                <p className={styles.subtitle}>You deserve a clean environment and thats out specialty.</p>
-                <a href="#booking" className={styles.btn} >Book Now</a>
+                <h1 className={styles.title}>Environmentally responsible cleaning.</h1>
+                <div className={styles.ecoFriendlyBadgeContainer}>
+                    <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
+                </div>
             </div>
-        </section>
+        </div>
     )
 }

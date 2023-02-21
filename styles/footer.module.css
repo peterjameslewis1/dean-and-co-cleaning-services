@@ -81,5 +81,8 @@
     .content .companyNumber {
         font-size: 11px;
     }
+    .content {
+        max-width: 80%;
+    }
 }
 

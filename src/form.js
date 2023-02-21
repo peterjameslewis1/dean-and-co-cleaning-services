@@ -8,7 +8,6 @@ export default function Form({ confirmationMessage }) {
     const confirmationScreenVisible =
         router.query?.success && router.query.success === "true";
     const formVisible = !confirmationScreenVisible;
-    console.log('formVisible', formVisible)
     const ConfirmationMessage = (
         <p className={styles.successMessage}>{confirmationMessage}</p>
     )

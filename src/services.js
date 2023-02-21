@@ -1,21 +1,21 @@
 import styles from '../styles/Services.module.css'
-import ecoFriendlyBadge from '../public/img/eco-friendly.png'
+
 export default function Services() {
     return (
         <div className={styles.servicesContainer}>
             <h2>Our Services</h2>
-            <div className={styles.ecoFriendlyBadgeContainer}>
-                <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
-                <p>We only use Eco-friendly products, no toxic chemicals!</p>
-            </div>
+            <h3>We only use Eco-friendly products, no toxic chemicals!</h3>
             <div className={styles.servicesText}>
                 <p>We serve both residential and commercial clients,
                     bringing cleanliness to every space.
                     Our specialty is Pre & Post tenancy cleans, ensuring
                     every inch is cleaned & presentable for your next tenant!
+                </p>
+                <p>
                     We can also clean your communal areas in your
                     business, keeping your hallways, restrooms, canteens &
-                    reception areas in order.</p>
+                    reception areas in order.
+                </p>
 
                 <h3>Need a hand at home?</h3>
 
@@ -23,12 +23,15 @@ export default function Services() {
                     Our friendly staff can help you clean your environment,
                     prepare your space for visitors, clean up after
                     celebrations, whatever the situation you can rely on
-                    Dean & Co. Cleaners
+                    Dean & Co.Cleaning Services Ltd.
+                </p>
+                <p>
                     We promise that our cleaners are reliable and
                     hardworking, for a mutual experience of respect and
-                    satisfaction.</p>
+                    satisfaction.
+                </p>
             </div>
-            <a href="#booking" className={styles.btn}>Book Now</a>
+            <a href="#booking" className={styles.btn}>Request Quote</a>
         </div>
     )
 }

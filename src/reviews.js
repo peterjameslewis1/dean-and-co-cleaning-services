@@ -6,19 +6,14 @@ export default function Reviews() {
             <h2 className={styles.title}>Happy Clients</h2>
             <div className={styles.reviews}>
                 <div className={styles.review}>
-                    <h3>Sandy D</h3>
+                    <h3>Sean S</h3>
                     <p>
                         My office looks remarkable, week in and week out. Dean & Co cleaners are superb and trustworthy. We've recommended them to friends, and every time they are satisfied.                    </p>
                 </div>
                 <div className={styles.review}>
-                    <h3>Katie M</h3>
+                    <h3>Danielle M</h3>
                     <p>
                         My husband and I are very satisfied customers. Our home looks lovely, and the cleaner is always willing to accommodate special requests.                    </p>
-                </div>
-                <div className={styles.review}>
-                    <h3>David W</h3>
-                    <p>
-                        My office looks remarkable, week in and week out. Dean & Co cleaners are superb and trustworthy. We've recommended them to friends, and every time they are satisfied.                    </p>
                 </div>
             </div>
         </div>

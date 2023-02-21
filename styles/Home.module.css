@@ -12,17 +12,23 @@
 }
 
 .textContainer {
+    display: flex;
     position: absolute;
     z-index: 99;
-    background-color: var(--ternary);
+    background-color: #dcdcdcbd;
     left: 100px;
     padding: 50px;
-    width: 50%;
+    width: 55%;
     top: 100px;
+    backdrop-filter: blur(7px);
+    align-items: center;
 }
-
+.ecoFriendlyBadge {
+    width: 200px;
+    display: block;
+}
 .title {
-    font-size: 90px;
+    font-size: 80px;
     color: var(--primary);
 }
 .subtitle {
@@ -59,7 +65,7 @@
 
 @media (max-width: 1900px) {
     .title {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
@@ -68,14 +74,17 @@
         height: 500px;
     }
     .textContainer {
-        width: 50%;
+        width: 60%;
         left: 50px;
     }
     .title {
-        font-size: 50px;
+        font-size: 45px;
     }
     .img {
         width: 100%;
+    }
+    .ecoFriendlyBadge {
+        width: 150px;
     }
 }
 
@@ -103,7 +112,7 @@
         padding: 20px;
     }
     .title {
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 10px;
         padding: 0;
     }
@@ -112,6 +121,9 @@
     }
     .img {
         position: relative;
+    }
+    .ecoFriendlyBadge {
+        width: 100px;
     }
 }
 
@@ -129,8 +141,14 @@
 }
 
 @media (max-width: 480px) {
+    .ecoFriendlyBadge {
+        bottom: -80px;
+    position: absolute;
+    left: 30px;
+    }
     .heroContainer {
         position: relative;
+        overflow: visible;
     }
     .textContainer {
         width: 70%;

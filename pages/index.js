@@ -14,12 +14,13 @@ config.autoAddCss = false
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export default function IndexPage() {
+
   return (
     <>
       <Hero />
-      <Services />
-      <Icons />
       <About />
+      <Icons />
+      <Services />
       <Reviews />
       <Booking />
       <Footer />
