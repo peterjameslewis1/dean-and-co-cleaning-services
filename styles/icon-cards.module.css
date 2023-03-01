@@ -1,9 +1,12 @@
 .container {
     display: flex;
     justify-content: space-evenly;
-    padding: 70px 0;
+    padding: 70px 50px;
     background-color: var(--primary);
     text-align: center;
+}
+.card {
+    flex: 1 0 33%;
 }
 .card h3 {
     margin-top: 20px;
@@ -46,6 +49,9 @@
     }
     .imageContainer img {
         width: 60px;
+    }
+    .card h3 {
+        font-size: 18px;
     }
 }
 
