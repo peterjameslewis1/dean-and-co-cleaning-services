@@ -45,6 +45,8 @@ export default function Form({ confirmationMessage }) {
             <input id="company" name="company" type="text" />
             <label htmlFor="email">E-mail Address *</label>
             <input id="email" type="email" name="email" required />
+            <label htmlFor="telephone">Phone *</label>
+            <input id="telephone" type="telephone" name="telephone" required />
             <label htmlFor="message">Message *</label>
             <textarea id="message" name="message" required />
             <button type="submit" className={styles.submit}>Submit</button>

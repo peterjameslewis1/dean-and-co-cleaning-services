@@ -3,7 +3,7 @@ import styles from '../styles/Services.module.css'
 export default function Services() {
     return (
         <div className={styles.servicesContainer}>
-            <h2>Our Services</h2>
+            <h2>Our services</h2>
             <h3>We only use Eco-friendly products, no toxic chemicals!</h3>
             <div className={styles.servicesText}>
                 <p>We serve both residential and commercial clients,

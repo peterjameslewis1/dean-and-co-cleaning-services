@@ -3,7 +3,7 @@ import styles from '../styles/about.module.css'
 export default function About() {
     return (
         <div className={styles.container}>
-            <h2>About Us</h2>
+            <h2>About us</h2>
             <h3>Our love for cleaning comes shining through!</h3>
             <p>
                 We love to clean. We know that not everyone does, but
