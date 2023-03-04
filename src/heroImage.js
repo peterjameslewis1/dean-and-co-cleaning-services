@@ -10,9 +10,9 @@ export default function HeroImage() {
             </div>
             <div className={styles.textContainer} >
                 <h1 className={styles.title}>Environmentally responsible cleaning.</h1>
-                <div className={styles.ecoFriendlyBadgeContainer}>
-                    <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
-                </div>
+            </div>
+            <div className={styles.ecoFriendlyBadgeContainer}>
+                <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
             </div>
         </div>
     )

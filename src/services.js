@@ -23,7 +23,7 @@ export default function Services() {
                     Our friendly staff can help you clean your environment,
                     prepare your space for visitors, clean up after
                     celebrations, whatever the situation you can rely on
-                    Dean & Co.Cleaning Services Ltd.
+                    Dean & Co. Cleaning Services Ltd.
                 </p>
                 <p>
                     We promise that our cleaners are reliable and

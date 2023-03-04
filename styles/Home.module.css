@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     padding: 50px;
     height: 800px;
 }
@@ -24,10 +23,13 @@
     align-items: center;
 }
 .ecoFriendlyBadge {
-    width: 150px;
+    width: 200px;
     display: block;
     position: absolute;
-    top: 0;
+    z-index: 999;
+    left: 50%;
+    top: 94%;
+    transform: translate(-50%, -50%);
 }
 .title {
     font-size: 50px;
@@ -44,6 +46,7 @@
     height: 100%;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .img {
@@ -85,20 +88,25 @@
     .img {
         width: 100%;
     }
+    .ecoFriendlyBadge {
+        top: 90%;
+    }
 }
 
 @media (max-width: 992px)  {
     .textContainer {
         left: 0;
         top: auto;
-        bottom: -30px;
-        width: 60%;
+        bottom: -10px;
+        width: 50%;
         display: flex;
         align-items: center;
     }
     .heroContainer {
         padding: 0;
         height: auto;
+    }
+    .heroImage {
         overflow: visible;
     }
     .title {
@@ -107,6 +115,10 @@
     .img {
         width: 100%;
         position: relative;
+    }
+    .ecoFriendlyBadge {
+        top: 108%;
+        width: 150px;
     }
 }
 
@@ -121,10 +133,13 @@
     .img {
         position: relative;
     }
+}
+
+@media (max-width: 600px) {
     .ecoFriendlyBadge {
         width: 100px;
     }
-}
+} 
 
 @media (max-width: 480px) {
     .btn {

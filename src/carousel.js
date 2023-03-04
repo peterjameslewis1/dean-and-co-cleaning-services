@@ -4,7 +4,6 @@ import { Swiper } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper";
@@ -16,7 +15,7 @@ export default function Carousel({ children }) {
             spaceBetween={100}
             centeredSlides={true}
             autoplay={{
-                delay: 2500,
+                delay: 5000,
                 disableOnInteraction: false,
             }}
             pagination={{
