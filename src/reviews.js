@@ -28,7 +28,7 @@ export default function Reviews() {
             >
                 {data.map(({ title, description }, index) => {
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={`${title}-${index}`}>
                             <h3>{title}</h3>
                             <p>{description}</p>
                         </SwiperSlide>
