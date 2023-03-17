@@ -5,9 +5,8 @@ import { useRouter } from 'next/router';
 export default function Form({ confirmationMessage }) {
     const [userName, setUserName] = useState('')
     const router = useRouter();
-    const confirmationScreenVisible =
-        router.query?.success && router.query.success === "true";
-    const formVisible = !confirmationScreenVisible;
+    const confirmationScreenVisible = router.query?.success && router.query.success === "true";
+
     const ConfirmationMessage = (
         <p className={styles.successMessage}>{confirmationMessage}</p>
     )
@@ -49,13 +48,13 @@ export default function Form({ confirmationMessage }) {
             <input id="telephone" type="telephone" name="telephone" required />
             <label htmlFor="message">Message *</label>
             <textarea id="message" name="message" required />
-            <button type="submit" className={styles.submit}>Submit</button>
+            <button type="submit" className={styles.submit} >Submit</button>
+            {confirmationScreenVisible && ConfirmationMessage}
         </form>
     )
     return (
         <>
             {ContactForm}
-            {confirmationScreenVisible && ConfirmationMessage}
         </>
     )
 }
