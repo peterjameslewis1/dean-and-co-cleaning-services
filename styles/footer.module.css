@@ -41,6 +41,9 @@
 .contact ul li {
     padding: 10px 0;
 }
+.contact ul li span {
+    font-size: 0.7em
+}
 .companyNumber {
     font-size: 12px;
     filter: brightness(0.6);

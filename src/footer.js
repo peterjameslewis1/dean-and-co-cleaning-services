@@ -19,12 +19,15 @@ export default function Footer() {
                         </li>
                         <li>Megan:
                             <a href="tel:+07450262660"> 07450 262660</a>
-                        </li>
-                        <li>
-                            Harvie:
-                            <a href="tel:+07549309118"> 07549 309118</a>
+                            <br />
+                            <span>Areas LS1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12</span>
                         </li>
                     </ul>
+                    <div>
+                        Happy with the service? Tell everyone.<br />
+                        Not happy with the service?
+                        Tell us by emailing <a href='mailto:help@deancocleaning.co.uk'>help@deancocleaning.co.uk</a>
+                    </div>
                     <p className={styles.companyNumber}>Company No. 14648906</p>
                 </div>
             </div>

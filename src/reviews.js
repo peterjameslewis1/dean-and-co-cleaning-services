@@ -35,6 +35,7 @@ export default function Reviews() {
                     )
                 })}
             </Carousel>
+            <a href='https://www.bark.com/en/gb/company/dean-and-co-cleaning-services-ltd/Xvl93/' target='_blank' className='bark-widget' data-type='verified' data-id='Xvl93' data-image='medium-navy' data-version='3.0'>Dean and Co Cleaning Services Ltd</a>
         </div >
     )
 }
