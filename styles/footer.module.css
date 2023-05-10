@@ -49,7 +49,9 @@
     filter: brightness(0.6);
     margin-top: 20px;
 }
-
+.reviewUs {
+    font-size: 18px;
+}
 @media (max-width: 992px) {
     .ecoFriendlyBadge {
         width: 200px;
@@ -58,6 +60,9 @@
 }
 
 @media (max-width: 768px) {
+    .reviewUs {
+        font-size: 14px;
+    }
     .content h3 {
         font-size: 26px;
     }
@@ -71,9 +76,13 @@
 }
 
 @media (max-width: 480px) {
+    .reviewUs {
+        font-size: 14px;
+    }
     .content .contact img {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
+        right: -30px;
     }
     .content h3 {
         font-size: 20px;

@@ -23,9 +23,9 @@ export default function Footer() {
                             <span>Areas LS1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12</span>
                         </li>
                     </ul>
-                    <div>
+                    <div className={styles.reviewUs}>
                         Happy with the service? Tell everyone.<br />
-                        Not happy with the service?
+                        Not happy with the service? <br />
                         Tell us by emailing <a href='mailto:help@deancocleaning.co.uk'>help@deancocleaning.co.uk</a>
                     </div>
                     <p className={styles.companyNumber}>Company No. 14648906</p>
