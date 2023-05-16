@@ -15,6 +15,22 @@ const data = [
     {
         title: 'Danielle M',
         description: "My husband and I are very satisfied customers. Our home looks lovely, and the cleaner is always willing to accommodate special requests."
+    },
+    {
+        title: 'P Gallagher',
+        description: 'Fantastic service-my house sparkles after a visit! Highly recommended.'
+    },
+    {
+        title: 'H Law',
+        description: "Wonderful people, absolutely brilliant. Megan's sheer kindness has brought me to tears, and the work her and her colleague have done is absolutely amazing. I cannot possibly recommend them enough.'"
+    },
+    {
+        title: 'Mrs Reynolds',
+        description: "'My house genuinely looks and feels revived, after a deep clean from Megan. As an older lady, I had some anxiety about giving a previously unknown person the run of my home. However, Megan's friendly, caring but business-like manner was reassuring, and now my only regret is that I didn't contact her sooner! Megan was extremely thorough and transformed every room she worked in. It's been getting more difficult to keep on top of cleaning, and I now feel like a weight has been lifted off my shoulders. I look forward to regular maintenance visits. Thank you Megan for your hard work and high standards! A true professional.'"
+    },
+    {
+        title: 'Dan N',
+        description: "'I wanted to leave this review, as the level of attention to detail I receive is outstanding. Coupled with a superb cleaning service. I have found them extremely trustworthy and a really efficient and cost effective company. I would have no hesitation in recommending them to anyone. Thanks again.'"
     }
 ]
 
