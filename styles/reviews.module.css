@@ -1,6 +1,6 @@
 .reviewsContainer {
     padding: 100px 50px;
-    background-image: url('../public//img/reviews-background-image.jpg');
+    background-image: url('../public//img/other-logos/reviews-background-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,8 +32,8 @@
     position: absolute;
     top: -50px;
     padding: 30px;
-    background: var(--primary);
-    color: var(--secondary);
+    background: var(--primary-1);
+    color: var(--primary-2);
 }
 
 

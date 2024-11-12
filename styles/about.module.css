@@ -1,7 +1,11 @@
 .container {
-    max-width: 60%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 100px;
+    background-color: var(--secondary-2);
+    color: var(--primary-2);
+}
+.content {
+    max-width: 70%;
 }
 
 .container h2 {
@@ -20,8 +24,18 @@
 
 
 @media (max-width: 1280px) {
-    .container {
+    .content {
         max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 100px 50px;
+    }
+    .content {
+        width: 100%;
+        max-width: 100%;
     }
 }
 

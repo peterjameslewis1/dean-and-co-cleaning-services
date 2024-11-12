@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
-import img from '../public/img/hero-image.jpg'
-import ecoFriendlyBadge from '../public/img/eco-friendly.png'
+import img from '../public/img/other-logos/hero-image.jpg'
+import ecoFriendlyBadge from '../public/img/other-logos/eco-friendly.png'
 
 export default function HeroImage() {
     return (

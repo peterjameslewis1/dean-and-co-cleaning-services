@@ -1,8 +1,7 @@
 .container {
     padding: 50px;
     margin: 0 auto;
-    box-shadow: 0px 15px 20px 0px var(--ternary);
-    color: var(--primary);
+    background-color: var(--primary-2);
 }
 .container label {
     font-size: 16px;
@@ -10,30 +9,29 @@
 }
 .container input, .container textarea {
     width: 100%;
-    margin: 10px auto;
+    margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid var(--ternary);
+    border: 2px solid var(--secondary-1);
     outline: none;
 }
 .container textarea {
     height: 150px;
 }
 .submit {
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
-    color: var(--secondary);
-    width: 100%;
-    padding: 10px;
+    position: relative;
+    background: var(--secondary-2);
+    color: var(--primary-2);
+    width: 150px;
+    padding: 20px 10px;
     border: none;
     margin-top: 40px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;
+    bottom: 0;
 }
 .submit:hover {
-    background-color: var(--secondary);
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    bottom: 5px;
 }
 .successMessage {
     margin-top: 20px;

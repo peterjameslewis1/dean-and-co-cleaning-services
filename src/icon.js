@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import oven from '../public/img/oven.png'
-import mop from '../public/img/mop.png'
-import bucket from '../public/img/cleaning-bucket.png'
+import oven from '../public/img/other-logos/oven.png'
+import mop from '../public/img/other-logos/mop.png'
+import bucket from '../public/img/other-logos/cleaning-bucket.png'
 import styles from '../styles/icon-cards.module.css'
 
 export default function Icons() {
@@ -11,19 +11,19 @@ export default function Icons() {
                 <div className={styles.imageContainer}>
                     <img className={styles.image} src={bucket.src} alt="Cleaning supplies" />
                 </div>
-                <h3>Domestic/residential</h3>
+                <h3>Domestic / Residential</h3>
             </div>
             <div className={styles.card}>
                 <div className={styles.imageContainer}>
                     <img className={styles.image} src={oven.src} alt="Iron icon" />
                 </div>
-                <h3>Oven cleaning</h3>
+                <h3>Oven Cleaning</h3>
             </div>
             <div className={styles.card}>
                 <div className={styles.imageContainer}>
                     <img className={styles.image} src={mop.src} alt="cleaning mop icon" />
                 </div>
-                <h3>Office/commercial</h3>
+                <h3>Office / Commercial</h3>
             </div>
         </div>
     )

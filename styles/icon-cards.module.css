@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-evenly;
     padding: 70px 50px;
-    background-color: var(--primary);
-    text-align: center;
+    background-color: var(--primary-1);
+
 }
 .card {
     flex: 1 0 33%;
+    text-align: center;
+    color: var(--secondary-1);
 }
 .card h3 {
     margin-top: 20px;
@@ -14,11 +16,10 @@
     font-weight: 500;
 }
 .imageContainer {
-    border: 1px solid var(--primary);
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: var(--ternary);
+    background-color: var(--secondary-1);
     transition: all 0.5s;
     margin: 0 auto;
     display: flex;

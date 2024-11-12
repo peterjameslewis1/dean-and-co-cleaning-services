@@ -1,11 +1,13 @@
 .footer {
-    background-color: var(--primary);
     color: var(--secondary);
+    background-image: url('../public//img//background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer .logo {
     height: 70%;
     padding: 30px;
-    background: var(--ternary);
+    background: var(--primary-3);
     border-radius: 50%;
     margin-bottom: 40px;
     height: 150px;
@@ -14,7 +16,13 @@
 .content {
     max-width: 90%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 100px 0;
+    text-align: center;
+}
+.logoContainer img {
+    width: 200px;
+    height: 100%;
+    margin-bottom: 50px;
 }
 .ecoFriendlyBadge {
     position: absolute;
@@ -25,6 +33,9 @@
 }
 .contact {
     position: relative;
+}
+.contact span {
+    font-size: 12px;
 }
 .location {
     padding-bottom: 40px;
@@ -47,7 +58,6 @@
 .companyNumber {
     font-size: 12px;
     filter: brightness(0.6);
-    margin-top: 20px;
 }
 .reviewUs {
     font-size: 18px;
@@ -95,6 +105,9 @@
     }
     .content {
         max-width: 80%;
+    }
+    .footer {
+        background-position: right;
     }
 }
 

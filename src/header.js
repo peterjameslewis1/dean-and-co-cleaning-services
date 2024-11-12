@@ -1,25 +1,25 @@
 import styles from '../styles/header.module.css'
-import headerImage from '../public/img/brand-logo.png'
+import headerImage from '../public/img/secondary-logos/title-and-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import the icons you need
 import {
     faPhone,
     faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
 const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.headerContainer}>
                 <div className={styles.headerLogo} >
-
-                    <img className={styles.logo} src={headerImage.src} alt="brand logo" />
+                    <Image className={styles.logo} src={headerImage} alt="brand logo" />
                 </div>
                 <div className={styles.headerContent}>
-                    <div className={styles.headerText}>
+                    {/* <div className={styles.headerText}>
                         <h1>DEAN & CO. CLEANING SERVICES LTD</h1>
                         <p>Hassle free cleaning solutions</p>
-                    </div>
+                    </div> */}
                     <div className={styles.contact}>
                         <a href="#booking">
                             <FontAwesomeIcon

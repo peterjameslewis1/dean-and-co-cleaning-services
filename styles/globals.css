@@ -1,7 +1,10 @@
 :root{
-  --primary:#282634;
-  --secondary:#FFFFFF;
-  --ternary: #DCDCDC;
+  --primary-1:#174545;
+  --primary-2:#ffffff;
+  --primary-3: #6bad45;
+  --secondary-1: #e8e3e0;
+--secondary-2: #f59166;
+--secondar-3:#fabdb5;
   --padding-large: 50px;
   --padding-small: 20px;
 }
@@ -10,13 +13,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'poppins bold', sans-serif;
 }
 
 html,
 body {
   max-width: 100vw;
-  background-color: var(--secondary);
+  background-color: var(--primary-2);
 }
 .trustpilot-widget {
   margin-top: 40px;
@@ -50,7 +54,7 @@ a {
   background-color: #ffffff9c;  /* Center slide text vertically */
   backdrop-filter: blur(2px);
   padding: 100px;
-  color: var(--primary);
+  color: var(--primary-1);
 }
 .swiper-wrapper {
   display: flex;
