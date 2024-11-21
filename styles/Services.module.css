@@ -11,12 +11,17 @@
 .servicesContainer h2 {
     font-size: 50px;
   color: var(--primary-1);
-  margin-bottom: 20px;
+}
+.servicesContainer h3 {
+  margin: 20px 0;
 }
 .content {
   width: 70%;
   margin: 0 auto;
   color: var(--primary-1);
+  background: rgb(247 255 247 / 90%);
+    padding: 50px;
+    border-radius: 5px;
 }
 .ecoFriendlyBadge {
   width: 200px;
@@ -62,9 +67,15 @@
   .ecoFriendlyBadge {
     top: -100px;
   }
+  .content {
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px)  {
+  .servicesContainer h2 {
+    font-size: 40px;
+}
   .servicesContainer p {
     font-weight: 600;
     font-size: 16px;
@@ -74,29 +85,28 @@
     width: 150px;
     height: 150px;
   }
+  .content {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-  .servicesContainer {
-    padding: 40px;
-    padding-bottom: 150px;
-  }
   .content {
-    width: 90%;
-    backdrop-filter: blur(5px);
+    padding: 20px;
+  }
+  .servicesContainer {
+    padding: 30px;
+    padding-bottom: 150px;
   }
   .servicesContainer h2 {
     font-size: 34px;
   }
   .servicesContainer h3 {
     font-size: 20px;
-    margin-bottom: 10px;
   }
-  
-.servicesText p {
-  margin: 0;
-}
-.servicesText h3 {
-  margin-bottom: 10px;
-}
+  .servicesText p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
