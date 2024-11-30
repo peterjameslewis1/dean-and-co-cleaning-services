@@ -10,9 +10,13 @@ export default function Footer() {
                 <div className={styles.logoContainer}>
                     <Image src={logo} alt="Dean and co cleaning's logo" />
                 </div>
-                <div className={styles.location}>
-                    <h3>Sanderson House, Station Road <br /> Horsforth, LS18 5NT.</h3>
-                </div>
+                <address className={styles.location}>
+                    Suite G04 1 Quality Court, <br />
+                    Chancery Lane,<br />
+                    London,<br />
+                    England,<br />
+                    WC2A1HR
+                </address>
                 <div className={styles.contact}>
                     <img className={styles.ecoFriendlyBadge} src={ecoFriendlyBadge.src} alt="Eco friendly badge" />
                     <p><strong>                            <a href="tel:+07450262660"> 07450 262660</a>
@@ -27,7 +31,7 @@ export default function Footer() {
                         <strong>                    <a href='mailto:help@deancocleaning.co.uk'>help@deancocleaning.co.uk</a>
                         </strong>
                     </p>
-                    <span>Areas LS1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12</span>
+                    <span>We cover Leeds & surrounding areas.</span>
                     <p className={styles.companyNumber}>Company No. 14648906</p>
                 </div>
             </div>
