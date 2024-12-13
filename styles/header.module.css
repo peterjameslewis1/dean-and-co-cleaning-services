@@ -16,6 +16,9 @@
 .header .contact a {
     margin: 5px 0;
 }
+.header .contact a span {
+    color: white;
+}
 .headerContent {
     display: flex;
     justify-content: space-between;
