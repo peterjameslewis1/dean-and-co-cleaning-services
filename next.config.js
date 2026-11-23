@@ -21,6 +21,10 @@ const HTML_PAGES = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // The site serves pre-sized .webp images with plain <img> tags and never uses next/image,
+  // so Next's /_next/image optimizer is switched off. This also removes the attack surface
+  // of known image-optimizer vulnerabilities in Next 13.x.
+  images: { unoptimized: true },
   async redirects() {
     return [
       { source: '/index.html', destination: '/', permanent: true },
