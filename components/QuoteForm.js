@@ -133,7 +133,7 @@ export default function QuoteForm() {
 
   return (
     <div id="quote" className="form-card">
-      <form id="quote-form" ref={formRef} noValidate onSubmit={onSubmit} style={sent ? { display: 'none' } : undefined}>
+      <form netlify id="quote-form" ref={formRef} noValidate onSubmit={onSubmit} style={sent ? { display: 'none' } : undefined}>
         <h2>Quote form</h2>
         <div className="form-grid">
           {FIELDS.map((f) => {
