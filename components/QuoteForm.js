@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { CONTACT } from './site';
 import { CheckIcon } from './icons';
 
-// Netlify Forms picks this form up at build time and stores the submissions.
-// After a successful submit Netlify redirects to the form's `action`, and the
-// `?sent=true` in it tells this component to show the thank-you message.
+// Netlify Forms (Next.js runtime v5) detects the form from public/__forms.html, and submissions
+// are POSTed to that static file. Keep its field names in step with the `name`s in FIELDS below.
+const FORMS_ENDPOINT = '/__forms.html';
+const FORM_NAME = 'contact';
 
 const BUILDING_TYPES = [
   'Education or school',
@@ -89,17 +90,12 @@ const FIELDS = [
 ];
 
 export default function QuoteForm() {
+  const formRef = useRef(null);
   const thanksRef = useRef(null);
   const [invalid, setInvalid] = useState({}); // field id -> true when showing an error
+  const [sending, setSending] = useState(false);
+  const [failed, setFailed] = useState(false);
   const [sent, setSent] = useState(false);
-
-  // Netlify redirects back here with ?sent=true after a successful submission.
-  useEffect(() => {
-    if (new URLSearchParams(window.location.search).get('sent') === 'true') {
-      setSent(true);
-      setTimeout(() => thanksRef.current && thanksRef.current.focus(), 0);
-    }
-  }, []);
 
   // Uses the browser's built-in validity (required, email format) and records the result.
   const check = (el) => {
@@ -121,18 +117,40 @@ export default function QuoteForm() {
     setInvalid((prev) => ({ ...prev, [e.target.id]: true }));
   };
 
+  // Only runs once the browser's own validation has passed.
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const form = formRef.current;
+    if (form.elements.website.value) return; // honeypot filled in, so it's a bot
+
+    setSending(true);
+    setFailed(false);
+    try {
+      const res = await fetch(FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString(),
+      });
+      if (!res.ok) throw new Error('Netlify returned ' + res.status);
+      setSent(true);
+      setTimeout(() => thanksRef.current && thanksRef.current.focus(), 0);
+    } catch (err) {
+      setFailed(true);
+    } finally {
+      setSending(false);
+    }
+  };
+
   return (
     <div id="quote" className="form-card">
       <form
-        data-netlify="true"
-        data-netlify-honeypot="website"
-        name="contact"
         id="quote-form"
-        method="POST"
-        action="/contact?sent=true#quote"
+        ref={formRef}
+        onSubmit={onSubmit}
         style={sent ? { display: 'none' } : undefined}
       >
         <h2>Quote form</h2>
+        <input type="hidden" name="form-name" value={FORM_NAME} />
         <div className="form-grid">
           {FIELDS.map((f) => {
             const errId = `${f.id}-err`;
@@ -186,10 +204,20 @@ export default function QuoteForm() {
             <Link href="/privacy-policy">Privacy Policy</Link> for more
             information.
           </p>
-          <button className="btn btn-primary" type="submit">
-            Send enquiry
+          <button className="btn btn-primary" type="submit" disabled={sending}>
+            {sending ? 'Sending…' : 'Send enquiry'}
           </button>
         </div>
+        <p
+          id="form-error"
+          className="form-alert"
+          role="alert"
+          hidden={!failed}
+          style={{ marginTop: '1rem' }}
+        >
+          Sorry, your enquiry could not be sent. Please call {CONTACT.mobile} or
+          email {CONTACT.email}.
+        </p>
       </form>
       <div
         className={`thanks${sent ? ' show' : ''}`}
