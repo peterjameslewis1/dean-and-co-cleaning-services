@@ -1,2 +1,4 @@
 /node_modules/
 /.next/
+/redesign-reference/
+.DS_Store

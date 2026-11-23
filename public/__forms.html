@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify form definitions</title>
+  </head>
+  <body>
+    <!--
+      Netlify Forms detection for the Next.js runtime. This file is never shown to visitors.
+      The quote form in components/QuoteForm.js POSTs to /__forms.html, and the field names
+      here must match the `name`s in that component's FIELDS list.
+    -->
+    <form
+      name="contact-form"
+      data-netlify="true"
+      data-netlify-honeypot="website"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contact-form" />
+      <input type="text" name="Name" />
+      <input type="text" name="Company" />
+      <input type="email" name="Email" />
+      <input type="tel" name="Phone" />
+      <input type="text" name="Building type" />
+      <input type="text" name="Postcode" />
+      <input type="text" name="How often you need cleaning" />
+      <textarea name="Message"></textarea>
+      <input type="text" name="website" />
+    </form>
+  </body>
+</html>
