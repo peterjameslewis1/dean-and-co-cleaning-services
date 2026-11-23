@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -10,8 +10,13 @@
       The quote form in components/QuoteForm.js POSTs to /__forms.html, and the field names
       here must match the `name`s in that component's FIELDS list.
     -->
-    <form name="contact" data-netlify="true" data-netlify-honeypot="website" hidden>
-      <input type="hidden" name="form-name" value="contact" />
+    <form
+      name="contact-form"
+      data-netlify="true"
+      data-netlify-honeypot="website"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contact-form" />
       <input type="text" name="Name" />
       <input type="text" name="Company" />
       <input type="email" name="Email" />

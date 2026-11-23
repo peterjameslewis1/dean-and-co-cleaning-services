@@ -6,7 +6,7 @@ import { CheckIcon } from './icons';
 // Netlify Forms (Next.js runtime v5) detects the form from public/__forms.html, and submissions
 // are POSTed to that static file. Keep its field names in step with the `name`s in FIELDS below.
 const FORMS_ENDPOINT = '/__forms.html';
-const FORM_NAME = 'contact';
+const FORM_NAME = 'contact-form';
 
 const BUILDING_TYPES = [
   'Education or school',
