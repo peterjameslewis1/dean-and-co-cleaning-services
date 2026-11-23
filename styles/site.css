@@ -448,7 +448,7 @@ tr:last-child td{border-bottom:0}
 @media (max-width:860px){.refs{grid-template-columns:1fr}}
 .pack{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(1rem,2vw,1.5rem)}
 .pack-card{background:var(--ebb-2);border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.25rem);display:flex;flex-direction:column;align-items:flex-start;gap:.5rem}
-.pack-card:first-child{border-radius:var(--leaf) var(--radius) var(--radius) var(--radius)}
+.pack-card:first-child{border-radius:var(--leaf) var(--radius) var(--radius) var(--radius);padding-top:clamp(2.5rem,5vw,3.5rem);padding-left:clamp(2.25rem,5vw,3.75rem)}
 .pack-card .btn{margin-top:auto}
 .pack-card .ticks{margin:0 0 1rem}
 @media (max-width:760px){.pack{grid-template-columns:1fr}.pack-card .btn{white-space:normal;text-align:center}}
